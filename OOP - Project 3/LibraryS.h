@@ -92,13 +92,13 @@ public:
 	void retrieve_by_name() {
 		auto it = find_by_name();
 		if (it == lib.end()) cout << "\nElementul nu exista\n";
-		cout << **it << '\n';
+		else cout << **it << '\n';
 	}
 
 	void retrieve_by_id() {
 		auto it = find_by_id();
 		if (it == lib.end()) cout << "\nElementul nu exista\n";
-		cout << **it << '\n';
+		else cout << **it << '\n';
 	}
 
 
