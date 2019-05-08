@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "ComplexNumber.h"
+#include "Address.h"
 using namespace std;
 //template <class T>
 class Info {

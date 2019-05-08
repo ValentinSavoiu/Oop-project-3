@@ -61,14 +61,17 @@ public:
 					return retrieve_by_value(Type, val);
 					break;
 				}
-				default:
+				case 'a':
 				{
 					Address val;
 					cin >> val;
 					return retrieve_by_value(Type, val);
 					break;
 				}
-
+				default:
+				{
+					throw "caracter invalid";
+				}
 			}
 		}
 		else {
@@ -151,13 +154,17 @@ public:
 				inf = (Info*) new InfoVal<ComplexNumber>(name, val);
 				break;
 			}
-			default: {
+			case 'a': 
+			{
 				Address val;
 				cin >> val;
 				inf = (Info*) new InfoVal<Address>(name, val);
 				break;
 			}
-			
+			default:
+			{
+				throw "caracter invalid";
+			}
 		}
 		if (it != lib.end()) {
 			cout << "\nAtasat la o informatie anterioara\n";
@@ -209,7 +216,7 @@ public:
 				retrieve_by_id();
 				break;
 			}
-			case -1:
+			default:
 			{
 				clear();
 				cout << "\nInchidere cu succes\n";

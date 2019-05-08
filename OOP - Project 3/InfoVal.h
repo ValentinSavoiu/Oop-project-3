@@ -25,10 +25,14 @@ public:
 	}
 	virtual char type() {
 		T t;
-		string u = typeid(t).name();
+		/*string u = typeid(t).name();
 		if (u.find("int") != string::npos) return 'i';
 		if (u.find("ComplexNumber") != string::npos) return 'c';
 		if (u.find("Address") != string::npos) return 'a';
+		return 's';*/
+		if (typeid(t) == typeid(int)) return 'i';
+		if (typeid(t) == typeid(ComplexNumber)) return 'c';
+		if (typeid(t) == typeid(Address)) return 'a';
 		return 's';
 	}
 	~InfoVal() {};
