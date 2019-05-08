@@ -3,10 +3,27 @@
 
 #include "pch.h"
 #include <iostream>
+#include <string>
+#include <vector>
+#include "Info.h"
+#include "InfoVal.h"
+#include "ComplexNumber.h"
+#include "Address.h"
+#include "LibraryS.h"
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n"; 
+
+int main() {
+	LibraryS *l = LibraryS::get_instance();
+	try {
+		l->interact();
+	}
+	catch (const char* expr) {
+		cout << expr;
+		l->clear();
+		return 0;
+	}
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

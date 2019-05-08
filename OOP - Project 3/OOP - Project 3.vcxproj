@@ -151,9 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Address.h" />
+    <ClInclude Include="ComplexNumber.h" />
+    <ClInclude Include="Info.h" />
+    <ClInclude Include="InfoVal.h" />
+    <ClInclude Include="LibraryS.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ComplexNumber.cpp" />
     <ClCompile Include="OOP - Project 3.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
